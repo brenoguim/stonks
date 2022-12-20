@@ -43,9 +43,9 @@ function calcular() {
     taxa = taxa.value/100
     prazo = prazo.value
     ipca = ipca.value/100
-taxa_ir = message <= 0.6 ? 0.225
-        : message <= 1 ? 0.2
-        : message <= 2 ? 0.175
+taxa_ir = prazo <= 0.6 ? 0.225
+        : prazo <= 1.0 ? 0.2
+        : prazo <= 2.0 ? 0.175
                        : 0.15;
     var rent = 1 + taxa + ipca;
     var rentFinal = Math.pow(rent, prazo);
