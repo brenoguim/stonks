@@ -43,7 +43,7 @@ function calcular() {
     taxa = taxa.value/100
     prazo = prazo.value
     ipca = ipca.value/100
-taxa_ir = prazo <= 0.6 ? 0.225
+taxa_ir = prazo <= 0.5 ? 0.225
         : prazo <= 1.0 ? 0.2
         : prazo <= 2.0 ? 0.175
                        : 0.15;
